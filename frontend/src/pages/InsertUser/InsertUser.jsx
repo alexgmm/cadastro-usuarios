@@ -1,9 +1,10 @@
 import React from "react";
+import InsertUserForm from "../../components/InserUserForm/InsertUserForm";
 
 function InsertUser() {
   return (
-    <div>
-      <h3>insert page</h3>
+    <div className="container">
+      <InsertUserForm />
     </div>
   );
 }
