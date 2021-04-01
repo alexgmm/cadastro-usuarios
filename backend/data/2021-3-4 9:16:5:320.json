@@ -1,1 +1,6 @@
-{"nome":"Carlos","email":"carlos@gmail.com","cpf":"12345678932","data":"1991-10-05"}
+{
+  "nome": "Carlos",
+  "email": "carlos@gmail.com",
+  "cpf": "12345678932",
+  "data": "1991-10-05"
+}

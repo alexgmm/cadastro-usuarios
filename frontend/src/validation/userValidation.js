@@ -2,7 +2,7 @@ import Joi from "joi";
 
 const nameSchema = Joi.object({
   nome: Joi.string()
-    .regex(/^[a-zA-Z]{3}([a-zA-Z]| )*$/)
+    .regex(/^[A-Za-zÀ-ÖØ-öø-ÿ]{3}([A-Za-zÀ-ÖØ-öø-ÿ]| )*$/)
     .required()
     .min(3)
     .messages({
@@ -62,8 +62,6 @@ const validateUser = async ({ nome, email, cpf, data }) => {
 
   result = await dataSchema.validate({ data });
   if (result.error) errors = { ...errors, data: result.error.message };
-
-  console.log(errors);
 
   return errors;
 };

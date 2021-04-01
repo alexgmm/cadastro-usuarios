@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: 25px 20px;
 
-  border: 1px solid var(--light-gray);
+  border: 1px solid var(--grey);
 
   display: flex;
   align-items: center;
@@ -43,9 +43,9 @@
 
   border: none;
 
-  -webkit-box-shadow: 0px 5px 0px -4px var(--light-gray);
-  -moz-box-shadow: 0px 5px 0px -4px var(--light-gray);
-  box-shadow: 0px 5px 0px -4px var(--light-gray);
+  -webkit-box-shadow: 0px 5px 0px -4px var(--grey);
+  -moz-box-shadow: 0px 5px 0px -4px var(--grey);
+  box-shadow: 0px 5px 0px -4px var(--grey);
 
   -webkit-transition: box-shadow 0.3s;
   transition: box-shadow 0.3s;

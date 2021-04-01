@@ -1,0 +1,45 @@
+#user-grid {
+  width: 90%;
+
+  margin: 0 auto;
+}
+
+.grid-header {
+  border: 1px solid var(--grey);
+}
+
+.grid-row:nth-child(odd) {
+  background-color: var(--light-grey);
+}
+
+.grid-row,
+.grid-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.grid-row > span,
+.grid-header > span {
+  padding: 15px 10px;
+}
+
+.grid-header > span {
+  font-weight: bold;
+}
+
+.user-name {
+  width: 35%;
+}
+
+.user-email {
+  width: 30%;
+}
+
+.user-cpf {
+  width: 20%;
+}
+
+.user-data {
+  width: 15%;
+}
