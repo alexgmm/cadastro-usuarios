@@ -6,7 +6,7 @@ module.exports = {
 
     const result = PseudoModel.save(user);
 
-    if (result.error) return res.status(500);
+    if (result && result.error) return res.status(500);
 
     return res.status(200);
   },

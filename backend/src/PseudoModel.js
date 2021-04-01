@@ -16,9 +16,6 @@ module.exports = {
       return `data/${d.getFullYear()}-${d.getMonth()}-${d.getDay()} ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}:${d.getMilliseconds()}.json`;
     }
 
-    fs.writeFile(getFileName(), user, (e) => {
-      if (e) return { error: "Erro ao salvar o arquivo." };
-      else return {};
-    });
+    return fs.writeFileSync(getFileName(), JSON.stringify(user));
   },
 };

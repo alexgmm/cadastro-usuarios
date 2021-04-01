@@ -1,3 +1,4 @@
+const cors = require("cors");
 const express = require("express");
 const bodyParser = require("body-parser");
 
@@ -7,12 +8,13 @@ class App {
   constructor() {
     this.express = express();
 
-    this.express.use("/", routes);
-
     this.middlewares();
+
+    this.express.use("/", routes);
   }
 
   middlewares() {
+    this.express.use(cors());
     this.express.use(express.json());
     this.express.use(bodyParser.urlencoded({ extended: true }));
   }
