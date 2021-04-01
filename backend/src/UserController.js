@@ -1,4 +1,5 @@
 const PseudoModel = require("./PseudoModel");
+const UserView = require("./UserView");
 
 module.exports = {
   async insert(req, res) {
@@ -14,6 +15,6 @@ module.exports = {
   async find(req, res) {
     const files = await PseudoModel.load();
 
-    res.send(files);
+    res.send(UserView.renderMany(files));
   },
 };
