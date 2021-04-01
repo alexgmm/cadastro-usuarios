@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import validateUser from "../../validation/userValidation";
 
 import Input from "./Input";
-import "./style.css";
+import "./form.css";
 
 function InsertUserForm({ submit }) {
   const [nome, setNome] = useState("");

@@ -1,7 +1,5 @@
 #user-grid {
   width: 90%;
-
-  margin: 0 auto;
 }
 
 .grid-header {
@@ -28,12 +26,16 @@
   font-weight: bold;
 }
 
+.user-id {
+  width: 10%;
+}
+
 .user-name {
-  width: 35%;
+  width: 30%;
 }
 
 .user-email {
-  width: 30%;
+  width: 25%;
 }
 
 .user-cpf {

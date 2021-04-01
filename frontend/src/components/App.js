@@ -11,8 +11,9 @@ function App() {
     <React.Fragment>
       <Navbar />
       <Switch>
-        <Route path="/list" component={ListUsers} />
-        <Route path="/insert" component={InsertUser} />
+        <Route exact path="/" component={ListUsers} />
+        <Route exact path="/list" component={ListUsers} />
+        <Route exact path="/insert" component={InsertUser} />
       </Switch>
     </React.Fragment>
   );

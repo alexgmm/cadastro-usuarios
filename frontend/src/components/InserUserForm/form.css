@@ -110,3 +110,7 @@
 
   color: white;
 }
+
+.btn:focus {
+  outline: none;
+}
