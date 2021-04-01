@@ -4,7 +4,7 @@ import "./grid.css";
 import UserRow from "./UserRow";
 
 function UserGrid({ data }) {
-  data = data.sort(function (a, b) {
+  data = data.sort((a, b) => {
     if (a.nome < b.nome) return -1;
 
     if (a.nome > b.nome) return 1;

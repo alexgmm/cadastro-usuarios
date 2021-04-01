@@ -7,5 +7,18 @@
 }
 
 .navbar-link {
-  padding: 10px 30px;
+  padding: 10px 30px 0px;
+  border-bottom: 6px solid white;
+}
+
+.navbar-link > h2:hover {
+  transition: 0.3s;
+}
+
+.navbar-link > h2:hover {
+  color: tomato;
+}
+
+.active {
+  border-bottom: 6px solid tomato;
 }
