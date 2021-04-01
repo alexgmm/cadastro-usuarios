@@ -15,7 +15,10 @@ module.exports = {
       const d = new Date();
       return `data/${d.getFullYear()}-${d.getMonth()}-${d.getDay()} ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}:${d.getMilliseconds()}.json`;
     }
+    const id = fs.readdirSync("./data").length;
 
-    return fs.writeFileSync(getFileName(), JSON.stringify(user));
+    user = { id, ...user };
+
+    fs.writeFileSync(getFileName(), JSON.stringify(user));
   },
 };
