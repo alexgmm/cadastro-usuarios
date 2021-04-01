@@ -1,6 +1,7 @@
 :root {
   --primary: blue;
   --light-gray: #bbb;
+  --danger: red;
 }
 
 * {

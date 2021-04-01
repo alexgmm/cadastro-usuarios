@@ -2,9 +2,10 @@ import React from "react";
 import InsertUserForm from "../../components/InserUserForm/InsertUserForm";
 
 function InsertUser() {
+  function submit(e) {}
   return (
     <div className="container">
-      <InsertUserForm />
+      <InsertUserForm submit={submit} />
     </div>
   );
 }
