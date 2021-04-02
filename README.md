@@ -20,6 +20,6 @@ $ cd frontend
 $ npm i
 $ npm start
 
-# A aplicação estará executando em http://localhost:3333
+# A aplicação estará executando em http://localhost:3000
 
 ```
